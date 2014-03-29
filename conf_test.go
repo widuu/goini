@@ -2,11 +2,11 @@ package goini
 
 import (
 	"fmt"
-	"github.com/widuu/goini"
+	"testing"
 )
 
-func Test() {
-	conf := goini.SetConfig("./conf/conf.ini")
+func Test(t *testing.T) {
+	conf := SetConfig("./conf/conf.ini")
 	username := conf.GetValue("database", "username")
 	fmt.Println(username) //root
 	conf.DeleteValue("database", "username")
