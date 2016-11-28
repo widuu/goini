@@ -117,6 +117,7 @@ func (c *Config) ReadList() []map[string]map[string]string {
 		}
 		switch {
 		case len(line) == 0:
+		case string(line[0]) == "#":	//增加配置文件备注
 		case line[0] == '[' && line[len(line)-1] == ']':
 			section = strings.TrimSpace(line[1 : len(line)-1])
 			data = make(map[string]map[string]string)
