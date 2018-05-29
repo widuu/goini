@@ -124,6 +124,9 @@ func (c *Config) ReadList() []map[string]map[string]string {
 			data[section] = make(map[string]string)
 		default:
 			i := strings.IndexAny(line, "=")
+			if i == -1 {
+				countine
+			}
 			value := strings.TrimSpace(line[i+1 : len(line)])
 			data[section][strings.TrimSpace(line[0:i])] = value
 			if c.uniquappend(section) == true {
