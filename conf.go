@@ -125,7 +125,7 @@ func (c *Config) ReadList() []map[string]map[string]string {
 		default:
 			i := strings.IndexAny(line, "=")
 			if i == -1 {
-				countine
+				continue
 			}
 			value := strings.TrimSpace(line[i+1 : len(line)])
 			data[section][strings.TrimSpace(line[0:i])] = value
