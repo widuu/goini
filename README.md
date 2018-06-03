@@ -1,6 +1,6 @@
 goini	
 ========
-[![Build Status](https://drone.io/github.com/widuu/goini/status.png)](https://drone.io/github.com/widuu/goini/latest)
+[![Build Status](https://travis-ci.org/widuu/goini.svg?branch=master)](https://travis-ci.org/widuu/goini)
 
 **[The official website](http://www.widuu.com)**
 ##描述
